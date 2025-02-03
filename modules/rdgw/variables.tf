@@ -108,13 +108,13 @@ variable "RemoteAccessUserGroup" {
 }
 
 variable "RemoteAccessScriptsUrl" {
-  default     = "https://raw.githubusercontent.com/plus3it/terraform-aws-remote-access/master"
+  default     = "https://raw.githubusercontent.com/MetroStar/terraform-aws-remote-access/master"
   description = "URL prefix where the repo scripts can be retrieved"
   type        = string
 }
 
 variable "UtilityScriptsUrl" {
-  default     = "https://raw.githubusercontent.com/plus3it/utils/master"
+  default     = "https://raw.githubusercontent.com/MetroStar/utils/master"
   description = "URL prefix where the repo scripts can be retrieved"
   type        = string
 }
@@ -182,6 +182,6 @@ variable "PublicDnszoneId" {
 }
 
 variable "AmiLookupLambdaArn" {
-  description = "Arn of the ami-lookup-id lambda. See https://github.com/plus3it/lookup-ami-ids for more details."
+  description = "Arn of the ami-lookup-id lambda. See https://github.com/MetroStar/lookup-ami-ids for more details."
   type        = string
 }

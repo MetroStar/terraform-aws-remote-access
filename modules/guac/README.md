@@ -23,7 +23,7 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_AmiLookupLambdaArn"></a> [AmiLookupLambdaArn](#input\_AmiLookupLambdaArn) | Arn of the ami-lookup-id lambda. See https://github.com/plus3it/lookup-ami-ids for more details. | `string` | n/a | yes |
+| <a name="input_AmiLookupLambdaArn"></a> [AmiLookupLambdaArn](#input\_AmiLookupLambdaArn) | Arn of the ami-lookup-id lambda. See https://github.com/MetroStar/lookup-ami-ids for more details. | `string` | n/a | yes |
 | <a name="input_GuacDnsZoneId"></a> [GuacDnsZoneId](#input\_GuacDnsZoneId) | Id of DNS zone for Guac Load Balancer DNS Record | `string` | n/a | yes |
 | <a name="input_LdapDN"></a> [LdapDN](#input\_LdapDN) | Distinguished Name (DN) of the LDAP directory.  E.g. DC=domain,DC=com | `string` | n/a | yes |
 | <a name="input_LdapServer"></a> [LdapServer](#input\_LdapServer) | Name of LDAP server Guacamole will authenticate against.  E.g. domain.com | `string` | n/a | yes |
@@ -55,7 +55,7 @@
 | <a name="input_OnFailureAction"></a> [OnFailureAction](#input\_OnFailureAction) | Action to be taken if stack creation fails. This must be one of: DO\_NOTHING, ROLLBACK, or DELETE. Conflicts with DisableRollback | `string` | `"ROLLBACK"` | no |
 | <a name="input_PolicyBody"></a> [PolicyBody](#input\_PolicyBody) | String containing the stack policy body. Conflicts with PolicyUrl | `string` | `""` | no |
 | <a name="input_PolicyUrl"></a> [PolicyUrl](#input\_PolicyUrl) | URL to a file containing the stack policy. Conflicts with PolicyBody | `string` | `""` | no |
-| <a name="input_RemoteAccessScriptsUrl"></a> [RemoteAccessScriptsUrl](#input\_RemoteAccessScriptsUrl) | URL prefix where the remote access scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/plus3it/terraform-aws-remote-access/master"` | no |
+| <a name="input_RemoteAccessScriptsUrl"></a> [RemoteAccessScriptsUrl](#input\_RemoteAccessScriptsUrl) | URL prefix where the remote access scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/MetroStar/terraform-aws-remote-access/master"` | no |
 | <a name="input_ScaleDownDesiredCapacity"></a> [ScaleDownDesiredCapacity](#input\_ScaleDownDesiredCapacity) | (Optional) Desired number of instances during the Scale Down Scheduled Action; ignored if ScaleDownSchedule is unset | `string` | `"1"` | no |
 | <a name="input_ScaleDownSchedule"></a> [ScaleDownSchedule](#input\_ScaleDownSchedule) | (Optional) Scheduled Action in cron-format (UTC) to scale down the number of instances; ignored if empty or ScaleUpSchedule is unset (E.g. '0 0 * * *') | `string` | `""` | no |
 | <a name="input_ScaleUpSchedule"></a> [ScaleUpSchedule](#input\_ScaleUpSchedule) | (Optional) Scheduled Action in cron-format (UTC) to scale up to the Desired Capacity; ignored if empty or ScaleDownSchedule is unset (E.g. '0 10 * * Mon-Fri') | `string` | `""` | no |

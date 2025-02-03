@@ -23,7 +23,7 @@ Author = 'Plus3 IT Systems'
 CompanyName = 'Plus3 IT Systems'
 
 # Copyright statement for this module
-Copyright = '(c) 2018 Maintainers of plus3it/cfn. All rights reserved.'
+Copyright = '(c) 2018 Maintainers of MetroStar/cfn. All rights reserved.'
 
 # Description of the functionality provided by this module
 # Description = ''

@@ -25,7 +25,7 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_AmiLookupLambdaArn"></a> [AmiLookupLambdaArn](#input\_AmiLookupLambdaArn) | Arn of the ami-lookup-id lambda. See https://github.com/plus3it/lookup-ami-ids for more details. | `string` | n/a | yes |
+| <a name="input_AmiLookupLambdaArn"></a> [AmiLookupLambdaArn](#input\_AmiLookupLambdaArn) | Arn of the ami-lookup-id lambda. See https://github.com/MetroStar/lookup-ami-ids for more details. | `string` | n/a | yes |
 | <a name="input_DomainSvcAccount"></a> [DomainSvcAccount](#input\_DomainSvcAccount) | User name for the account that will join the instance to the Connection Broker Cluster | `string` | n/a | yes |
 | <a name="input_DomainSvcPassword"></a> [DomainSvcPassword](#input\_DomainSvcPassword) | Password for the Connection Broker service account. Must be at least 8 characters containing letters, numbers and symbols | `string` | n/a | yes |
 | <a name="input_RdpPrivateKeyPassword"></a> [RdpPrivateKeyPassword](#input\_RdpPrivateKeyPassword) | Password to the RDP certificate private key | `string` | n/a | yes |
@@ -53,7 +53,7 @@
 | <a name="input_NlbZones"></a> [NlbZones](#input\_NlbZones) | Map of NLB Zones | `map(string)` | <pre>{<br/>  "us-east-1": "Z26RNL4JYFTOTI",<br/>  "us-east-2": "ZLMOA37VPKANP",<br/>  "us-west-1": "Z24FKFUX50B4VW",<br/>  "us-west-2": "Z18D5FSROUN65G"<br/>}</pre> | no |
 | <a name="input_PrivateDnszoneId"></a> [PrivateDnszoneId](#input\_PrivateDnszoneId) | ZoneId where DNS record will be created for the RDSH nodes | `string` | `""` | no |
 | <a name="input_RdpPrivateKeyS3Endpoint"></a> [RdpPrivateKeyS3Endpoint](#input\_RdpPrivateKeyS3Endpoint) | S3 endpoint URL hosting the bucket where the RDP certificate private key is stored | `string` | `"https://s3.amazonaws.com"` | no |
-| <a name="input_RemoteAccessScriptsUrl"></a> [RemoteAccessScriptsUrl](#input\_RemoteAccessScriptsUrl) | URL prefix where the repo scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/plus3it/terraform-aws-remote-access/master"` | no |
+| <a name="input_RemoteAccessScriptsUrl"></a> [RemoteAccessScriptsUrl](#input\_RemoteAccessScriptsUrl) | URL prefix where the repo scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/MetroStar/terraform-aws-remote-access/master"` | no |
 | <a name="input_S3Bucket"></a> [S3Bucket](#input\_S3Bucket) | n/a | `string` | `"your_bucket"` | no |
 | <a name="input_ScaleDownDesiredCapacity"></a> [ScaleDownDesiredCapacity](#input\_ScaleDownDesiredCapacity) | (Optional) Desired number of instances during the Scale Down Scheduled Action; ignored if ScaleDownSchedule is unset | `string` | `"1"` | no |
 | <a name="input_ScaleDownSchedule"></a> [ScaleDownSchedule](#input\_ScaleDownSchedule) | (Optional) Scheduled Action in cron-format (UTC) to scale down the number of instances; ignored if empty or ScaleUpSchedule is unset (E.g. '0 0 * * *') | `string` | `""` | no |
@@ -61,7 +61,7 @@
 | <a name="input_SubnetIDs"></a> [SubnetIDs](#input\_SubnetIDs) | List of Subnet IDs where the RDSH instances and ELB will be launched | `list(string)` | `[]` | no |
 | <a name="input_UpdateSchedule"></a> [UpdateSchedule](#input\_UpdateSchedule) | (Optional) Time interval between auto stack updates. Refer to the AWS documentation for valid input syntax: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html | `string` | `""` | no |
 | <a name="input_UserProfileDiskPath"></a> [UserProfileDiskPath](#input\_UserProfileDiskPath) | Path to a CIFS share where User Profile Disks are stored, e.g. [ "home.example.com", "Profiles$" ] eq "\\\home.example.com\Profiles$" | `list(string)` | <pre>[<br/>  "home.example.com",<br/>  "Profiles$"<br/>]</pre> | no |
-| <a name="input_UtilityScriptsUrl"></a> [UtilityScriptsUrl](#input\_UtilityScriptsUrl) | URL prefix where the repo scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/plus3it/utils/master"` | no |
+| <a name="input_UtilityScriptsUrl"></a> [UtilityScriptsUrl](#input\_UtilityScriptsUrl) | URL prefix where the repo scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/MetroStar/utils/master"` | no |
 
 ## Outputs
 

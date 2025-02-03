@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 **Released**: 2020.04.10
 
-**Commit Delta**: [Change from 0.5.2 release](https://github.com/plus3it/terraform-aws-remote-access/compare/0.5.2...0.6.0)
+**Commit Delta**: [Change from 0.5.2 release](https://github.com/MetroStar/terraform-aws-remote-access/compare/0.5.2...0.6.0)
 
 **Summary**:
 
@@ -21,7 +21,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 **Released**: 2020.04.06
 
-**Commit Delta**: [Change from 0.1.0 release](https://github.com/plus3it/terraform-aws-remote-access/compare/0.1.0...0.5.2)
+**Commit Delta**: [Change from 0.1.0 release](https://github.com/MetroStar/terraform-aws-remote-access/compare/0.1.0...0.5.2)
 
 **Summary**:
 
@@ -32,7 +32,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 **Released**: 2020.02.28
 
-**Commit Delta**: [Change from 0.0.1 release](https://github.com/plus3it/terraform-aws-remote-access/compare/0.0.1...0.1.0)
+**Commit Delta**: [Change from 0.0.1 release](https://github.com/MetroStar/terraform-aws-remote-access/compare/0.0.1...0.1.0)
 
 **Summary**:
 
@@ -43,7 +43,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 **Released**: 2020.02.07
 
-**Commit Delta**: [Change from 0.0.0 release](https://github.com/plus3it/terraform-aws-remote-access/compare/0.0.0...0.0.1)
+**Commit Delta**: [Change from 0.0.0 release](https://github.com/MetroStar/terraform-aws-remote-access/compare/0.0.0...0.0.1)
 
 **Summary**:
 

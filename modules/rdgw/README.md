@@ -25,7 +25,7 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_AmiLookupLambdaArn"></a> [AmiLookupLambdaArn](#input\_AmiLookupLambdaArn) | Arn of the ami-lookup-id lambda. See https://github.com/plus3it/lookup-ami-ids for more details. | `string` | n/a | yes |
+| <a name="input_AmiLookupLambdaArn"></a> [AmiLookupLambdaArn](#input\_AmiLookupLambdaArn) | Arn of the ami-lookup-id lambda. See https://github.com/MetroStar/lookup-ami-ids for more details. | `string` | n/a | yes |
 | <a name="input_DomainDirectoryId"></a> [DomainDirectoryId](#input\_DomainDirectoryId) | ID of the AWS Directory Service domain, e.g. d-xxxxxxxxxx | `string` | n/a | yes |
 | <a name="input_PrivateSubnetIds"></a> [PrivateSubnetIds](#input\_PrivateSubnetIds) | Comma separated string of Private Subnet IDs where the RDGW instances will run | `list(string)` | n/a | yes |
 | <a name="input_PublicSubnetIds"></a> [PublicSubnetIds](#input\_PublicSubnetIds) | Comma separated string of Public subnet IDs to attach to the load balancer | `list(string)` | n/a | yes |
@@ -47,7 +47,7 @@
 | <a name="input_MaxCapacity"></a> [MaxCapacity](#input\_MaxCapacity) | The maximum number of instances for the autoscale group | `string` | `"2"` | no |
 | <a name="input_MinCapacity"></a> [MinCapacity](#input\_MinCapacity) | The minimum number of instances for the autoscale group | `string` | `"0"` | no |
 | <a name="input_PublicDnszoneId"></a> [PublicDnszoneId](#input\_PublicDnszoneId) | Public DNS Zone where the RDGW record will be created | `string` | `""` | no |
-| <a name="input_RemoteAccessScriptsUrl"></a> [RemoteAccessScriptsUrl](#input\_RemoteAccessScriptsUrl) | URL prefix where the repo scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/plus3it/terraform-aws-remote-access/master"` | no |
+| <a name="input_RemoteAccessScriptsUrl"></a> [RemoteAccessScriptsUrl](#input\_RemoteAccessScriptsUrl) | URL prefix where the repo scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/MetroStar/terraform-aws-remote-access/master"` | no |
 | <a name="input_RemoteAccessUserGroup"></a> [RemoteAccessUserGroup](#input\_RemoteAccessUserGroup) | Domain group of users authorized to use the RDGW | `string` | `"Domain Admins"` | no |
 | <a name="input_ScaleDownDesiredCapacity"></a> [ScaleDownDesiredCapacity](#input\_ScaleDownDesiredCapacity) | (Optional) Desired number of instances during the Scale Down Scheduled Action; ignored if ScaleDownSchedule is unset | `string` | `"1"` | no |
 | <a name="input_ScaleDownSchedule"></a> [ScaleDownSchedule](#input\_ScaleDownSchedule) | (Optional) Scheduled Action in cron-format (UTC) to scale down the number of instances; ignored if empty or ScaleUpSchedule is unset (E.g. "0 0 * * *") | `string` | `""` | no |
@@ -55,7 +55,7 @@
 | <a name="input_SslCertificateName"></a> [SslCertificateName](#input\_SslCertificateName) | The name (for IAM) or identifier (for ACM) of the SSL certificate to associate with the LB -- the cert must already exist in the service | `string` | `""` | no |
 | <a name="input_SslCertificateService"></a> [SslCertificateService](#input\_SslCertificateService) | The service hosting the SSL certificate.  ACM or IAM are allowed values | `string` | `"ACM"` | no |
 | <a name="input_UpdateSchedule"></a> [UpdateSchedule](#input\_UpdateSchedule) | (Optional) Time interval between auto stack updates. Refer to the AWS documentation for valid input syntax: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html | `string` | `""` | no |
-| <a name="input_UtilityScriptsUrl"></a> [UtilityScriptsUrl](#input\_UtilityScriptsUrl) | URL prefix where the repo scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/plus3it/utils/master"` | no |
+| <a name="input_UtilityScriptsUrl"></a> [UtilityScriptsUrl](#input\_UtilityScriptsUrl) | URL prefix where the repo scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/MetroStar/utils/master"` | no |
 
 ## Outputs
 

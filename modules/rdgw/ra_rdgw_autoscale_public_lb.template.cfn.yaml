@@ -123,7 +123,7 @@ Parameters:
     Description: Json string containing list of maps of ami search filters. refer to the boto3 docs for a complete filter list (https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_images)
     Type: String
   AmiLookupLambdaArn:
-    Description: Arn of the ami-lookup-id lambda. See https://github.com/plus3it/lookup-ami-ids for more details.
+    Description: Arn of the ami-lookup-id lambda. See https://github.com/MetroStar/lookup-ami-ids for more details.
     Type: String
   AmiOwners:
     Default: '["amazon"]'
@@ -224,7 +224,7 @@ Parameters:
     Type: String
   RemoteAccessScriptsUrl:
     Description: URL prefix where the remote access scripts can be retrieved
-    Default: https://raw.githubusercontent.com/plus3it/terraform-aws-remote-access/master
+    Default: https://raw.githubusercontent.com/MetroStar/terraform-aws-remote-access/master
     Type: String
     AllowedPattern: ^https:/.*
   Route53HostedZoneId:
@@ -235,7 +235,7 @@ Parameters:
     Type: String
   UtilityScriptsUrl:
     Description: URL prefix where the utility scripts can be retrieved
-    Default: https://raw.githubusercontent.com/plus3it/utils/master
+    Default: https://raw.githubusercontent.com/MetroStar/utils/master
     Type: String
     AllowedPattern: ^https:/.*
   ScaleDownDesiredCapacity:

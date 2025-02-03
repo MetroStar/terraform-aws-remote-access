@@ -26,7 +26,7 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_AmiLookupLambdaArn"></a> [AmiLookupLambdaArn](#input\_AmiLookupLambdaArn) | Arn of the ami-lookup-id lambda. See https://github.com/plus3it/lookup-ami-ids for more details. | `string` | n/a | yes |
+| <a name="input_AmiLookupLambdaArn"></a> [AmiLookupLambdaArn](#input\_AmiLookupLambdaArn) | Arn of the ami-lookup-id lambda. See https://github.com/MetroStar/lookup-ami-ids for more details. | `string` | n/a | yes |
 | <a name="input_S3Bucket"></a> [S3Bucket](#input\_S3Bucket) | n/a | `any` | n/a | yes |
 | <a name="input_StackName"></a> [StackName](#input\_StackName) | CloudFormation Stack Name.  Must be less than 10 characters | `string` | n/a | yes |
 | <a name="input_VpcId"></a> [VpcId](#input\_VpcId) | VPC to deploy instance into | `string` | n/a | yes |
@@ -52,13 +52,13 @@
 | <a name="input_PatchSchedule"></a> [PatchSchedule](#input\_PatchSchedule) | Schedule used to apply patches to the instance | `string` | `"cron(0 6 ? * Sat *)"` | no |
 | <a name="input_PatchSnsTopicArn"></a> [PatchSnsTopicArn](#input\_PatchSnsTopicArn) | SNS Topic used for patch status notifications | `string` | `""` | no |
 | <a name="input_RdcbDnszoneId"></a> [RdcbDnszoneId](#input\_RdcbDnszoneId) | Zone to create DNS record for RDCB instance | `string` | `""` | no |
-| <a name="input_RemoteAccessScriptsUrl"></a> [RemoteAccessScriptsUrl](#input\_RemoteAccessScriptsUrl) | URL prefix where the repo scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/plus3it/terraform-aws-remote-access/master"` | no |
+| <a name="input_RemoteAccessScriptsUrl"></a> [RemoteAccessScriptsUrl](#input\_RemoteAccessScriptsUrl) | URL prefix where the repo scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/MetroStar/terraform-aws-remote-access/master"` | no |
 | <a name="input_SecurityGroupIngress"></a> [SecurityGroupIngress](#input\_SecurityGroupIngress) | List of security group IPs to allow | `list(string)` | `[]` | no |
 | <a name="input_SnapshotFrequency"></a> [SnapshotFrequency](#input\_SnapshotFrequency) | (Optional) Specify an interval in minutes to configure snapshots of the EBS fileshare volume. Set an empty value "" to skip configuring snapshots. Default interval is 60 minutes. | `string` | `"60"` | no |
 | <a name="input_SsmKeyId"></a> [SsmKeyId](#input\_SsmKeyId) | KMS Key ID used to encrypt/decrypt the SsmRdcbCredential | `string` | `"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"` | no |
 | <a name="input_SsmRdcbCredential"></a> [SsmRdcbCredential](#input\_SsmRdcbCredential) | SSM Parameter Name for a SecureString containing the domain credential for the RDCB service account. SSM Parameter Value format is '@{Username = "<user>"; Password = "<password>"}' | `string` | `"/your-path/rdcb/credential"` | no |
 | <a name="input_TerminationProtection"></a> [TerminationProtection](#input\_TerminationProtection) | Enable or disable instance termination protection.  Protection is enabled by default. | `string` | `true` | no |
-| <a name="input_UtilityScriptsUrl"></a> [UtilityScriptsUrl](#input\_UtilityScriptsUrl) | URL prefix where the repo scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/plus3it/utils/master"` | no |
+| <a name="input_UtilityScriptsUrl"></a> [UtilityScriptsUrl](#input\_UtilityScriptsUrl) | URL prefix where the repo scripts can be retrieved | `string` | `"https://raw.githubusercontent.com/MetroStar/utils/master"` | no |
 
 ## Outputs
 
